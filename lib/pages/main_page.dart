@@ -1,8 +1,17 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:numberpicker/numberpicker.dart';
 
-class MainPage extends StatelessWidget{
+class MainPage extends StatefulWidget{
+  MainPage({Key key}) : super(key: key);
+
+  MainPageState createState() => MainPageState();
+}
+
+class MainPageState extends State<MainPage>{
+  int _n = 75;
+
   Widget build(BuildContext context){
     return new Material(
       color: Colors.indigoAccent,
@@ -18,6 +27,16 @@ class MainPage extends StatelessWidget{
                         "Toque Para Iniciar o Bingo Piadista",
                       style: new TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
+                    ),
+                    new Padding(padding: EdgeInsets.symmetric(vertical: 10.0)),
+                    new RaisedButton(
+                      onPressed: _showIntDialog,
+                    child: new Text(
+                        "Número de pedras do bingo: $_n",
+                      style: new TextStyle(fontSize: 18),
+                    ),
+                      color: Colors.tealAccent,
+                      padding: EdgeInsets.all(10.0),
                     ),
                     new Padding(padding: EdgeInsets.symmetric(vertical: 10.0)),
                     new Icon(
@@ -56,6 +75,25 @@ class MainPage extends StatelessWidget{
       ),
     );
   }
+
+  Future _showIntDialog() async {
+    await showDialog<int>(
+      context: context,
+      builder: (BuildContext context) {
+        return new NumberPickerDialog.integer(
+          minValue: 1,
+          maxValue: 100,
+          initialIntegerValue: _n,
+          title: new Text("Número de pedras do bingo:"),
+        );
+      },
+    ).then((num value) {
+      if (value != null) {
+        setState(() => _n = value);
+      }
+    });
+  }
+
 }
 
 _launchURL(url) async {

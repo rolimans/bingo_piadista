@@ -14,6 +14,7 @@ environment:
 
 dependencies:
   url_launcher:
+  numberpicker:
   flutter:
     sdk: flutter
 
