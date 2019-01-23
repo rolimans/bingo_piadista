@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:numberpicker/numberpicker.dart';
+import 'number_sorting_page.dart';
 import '../dao/numbers_dao.dart';
 
 class MainPage extends StatefulWidget{
@@ -12,12 +13,21 @@ class MainPage extends StatefulWidget{
 
 class MainPageState extends State<MainPage>{
   int _n = 75;
+  NumbersDAO _dao = new NumbersDAO();
 
   Widget build(BuildContext context){
     return new Material(
       color: Colors.indigoAccent,
       child: new InkWell(
-        onTap: test,
+        onTap: () {
+          _dao.get_numbers(_n).then((nums) {
+            Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: (context) => NumberSortingPage(nums)),
+                (Route route) => route == null
+            );
+          });
+        },
         child: new Column(
           children: <Widget>[
             new Expanded(
@@ -63,7 +73,7 @@ class MainPageState extends State<MainPage>{
                                   style: new TextStyle(color: Colors.amber, fontStyle: FontStyle.italic, fontSize: 13),
                                   recognizer: new TapGestureRecognizer()
                                       ..onTap = () {
-                                      _launchURL("http://amarall.com");
+                                      _launchURL("https://github.com/rolimans/bingo_piadista");
                                     },
                                 )
                             ],
@@ -95,16 +105,11 @@ class MainPageState extends State<MainPage>{
     });
   }
 
-  void test(){
-    new NumbersDAO(22).numbers;
-  }
-
-}
-
-_launchURL(url) async {
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
+  _launchURL(url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }

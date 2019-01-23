@@ -4,11 +4,7 @@ import 'dart:convert';
 class NumbersDAO{
   PiadasFetcher fetcher = new PiadasFetcher();
 
-  int len;
-
-  NumbersDAO(this.len);
-
-  Future<List<Number>> get numbers async{
+  Future<List<Number>> get_numbers(int len) async{
     try{
       Map<String, dynamic> json = jsonDecode(await fetcher.readData);
       List<Number> nums = new List(len);
