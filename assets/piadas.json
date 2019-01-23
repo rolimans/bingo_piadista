@@ -1,3 +1,229 @@
 {
-  "1": "Ronco do Porco"
+  "1": {
+    "txt": "Ronco de porco ou Início do jogo",
+    "desc": "Onomatopeia do som suíno"
+  },
+  "2": {
+    "txt": "Só um patinho na lagoa",
+    "desc": "Imagem do número"
+  },
+  "3": {
+    "txt": "Porquinhos ou Mosqueteiros",
+    "desc": "Referência aos livros"
+  },
+  "4": {
+    "txt": "Pernas da mesa"
+  },
+  "5": {
+    "txt": "Cachorro",
+    "desc": "Jogo do Bicho"
+  },
+  "6": {
+    "txt": "Meia Dúzia"
+  },
+  "7": {
+    "txt": "Machado",
+    "desc": "Imagem do número"
+  },
+  "8": {
+    "txt": "Biscoito",
+    "desc": "Trocadilho Sonoro"
+  },
+  "9": {
+    "txt": "Pingo no pé 9 é, Artilheiro",
+    "desc": "Rima com o número e futebol"
+  },
+  "10": {
+    "txt": "Craque de bola",
+    "desc": "Referência ao futebol"
+  },
+  "11": {
+    "txt": "Casa de Bronze ou Um atrás do outro",
+    "desc": "Rima, ou imaginação"
+  },
+  "12": {
+    "txt": "Uma dúzia"
+  },
+  "13": {
+    "txt": "Maria Cristina ou Galo",
+    "desc": "O nome tem 13 letras e Jogo do Bicho"
+  },
+  "14": {
+    "txt": "Dona Florinda",
+    "desc": "Referência ao programa Chaves"
+  },
+  "15": {
+    "txt": "Debutante",
+    "desc": "Festas de 15 anos"
+  },
+  "16": {
+    "txt": "O leão ta solto",
+    "desc": "Referência ao jogo do bicho"
+  },
+  "17": {
+    "txt": "O bicho que pula",
+    "desc": "Referência ao jogo do bicho"
+  },
+  "18": {
+    "txt": "Dos outros e Idade Adulta",
+    "desc": "Trocadilho sonoro e Maioridade"
+  },
+  "19": {
+    "txt": "Pavão",
+    "desc": "Referência ao jogo do bicho?"
+  },
+  "20": {
+    "txt": "Amigos ouvintes, o número 20",
+    "desc": "Trocadilho sonoro"
+  },
+  "21": {
+    "txt": "O Touro",
+    "desc": "Referência ao jogo do bicho"
+  },
+  "22": {
+    "txt": "Dois patinhos na lagoa",
+    "desc": "A imagem do número lemba dois patos"
+  },
+  "23": {
+    "txt": "Descendente dele",
+    "desc": "Referência ao número 24"
+  },
+  "24": {
+    "txt": "Número do veado",
+    "desc": "Jogo do bicho"
+  },
+  "25": {
+    "txt": "Depois dele",
+    "desc": "Referência ao número 24"
+  },
+  "26": {
+    "txt": "Holandês",
+    "desc": "Trocadilho Sonoro"
+  },
+  "28": {
+    "txt": "Vem torto que eu endireito",
+    "desc": "Trocadilho sonoro"
+  },
+  "29": {
+    "txt": "O famoso São Pedro",
+    "desc": "Dia do santo"
+  },
+  "30": {
+    "txt": "Não minta, saiu trinta"
+  },
+  "31": {
+    "txt": "Final de Mês Grande",
+    "desc": "Referência ao calendário"
+  },
+  "32": {
+    "txt": "O Revolvinho",
+    "desc": "Referência ao calibre 32"
+  },
+  "33": {
+    "txt": "Idade de Cristo",
+    "desc": "Cristo morreu com 33 anos"
+  },
+  "34": {
+    "txt": "As tripas mocotó e fato",
+    "desc": "Trocadilho Sonoro"
+  },
+  "35": {
+    "txt": "Triste Chico",
+    "desc": "Trocadilho Sonoro"
+  },
+  "38": {
+    "txt": "Justiceira",
+    "desc": "Referência à arma calibre 38"
+  },
+  "39": {
+    "txt": "Trinta e Tudo"
+  },
+  "40": {
+    "txt": "Panelão sem fundo"
+  },
+  "43": {
+    "txt": "Cavalo",
+    "desc": "Jogo do Bicho?"
+  },
+  "44": {
+    "txt": "Quá-Quá",
+    "desc": "Trocadilho sonoro semelhante ao barulho dos patos"
+  },
+  "45": {
+    "txt": "Fim do Primeiro Tempo",
+    "desc": "Referência ao futebol"
+  },
+  "48": {
+    "txt": "O sanfonão"
+  },
+  "49": {
+    "txt": "Quarenta e tudo"
+  },
+  "50": {
+    "txt": "É o penta",
+    "desc": "Rima"
+  },
+  "51": {
+    "txt": "Uma boa ideia",
+    "desc": "Referência à bebida alcoólica"
+  },
+  "55": {
+    "txt": "Dois cachorros do padre",
+    "desc": "Referência ao jogo do bicho (5 é o cachorro)"
+  },
+  "57": {
+    "txt": "Do Ladrão",
+    "desc": "Referência ao código jurídico  157"
+  },
+  "58": {
+    "txt": "Primeira Copa",
+    "desc": "Referência ao futebol"
+  },
+  "60": {
+    "txt": "Pra descansar",
+    "desc": "(Você senta)"
+  },
+  "62": {
+    "txt": "Segunda Copa",
+    "desc": "Referência ao futebol"
+  },
+  "66": {
+    "txt": "Um tapa atrás da orelha",
+    "desc": "Trocadilho sonoro (meia-meia)"
+  },
+  "67": {
+    "txt": "Me acerte",
+    "desc": "Trocadilho sonoro"
+  },
+  "69": {
+    "txt": "Um pra cima e outro para baixo ou De qualquer jeito ou Um cagando e o outro olhando"
+  },
+  "70": {
+    "txt": "Até conseguir",
+    "desc": "(Você tenta)"
+  },
+  "71": {
+    "txt": "Dona Clotilde",
+    "desc": "Referência ao programa Chaves"
+  },
+  "72": {
+    "txt": "Seu Madruga",
+    "desc": "Referência ao programa Chaves"
+  },
+  "75": {
+    "txt": "Fim de jogo",
+    "desc": "Geralmente é a última pedra do jogo"
+  },
+  "77": {
+    "txt": "Duas machadinhas",
+    "desc": "Referência à imagem do número"
+  },
+  "88": {
+    "txt": "Dois gordos",
+    "desc": "Imagem do número"
+  },
+  "90": {
+    "txt": "A velha",
+    "desc": "Referência à idade avançada"
+  }
 }
