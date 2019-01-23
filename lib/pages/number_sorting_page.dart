@@ -60,7 +60,8 @@ class NumberSortingPageState extends State<NumberSortingPage> with SingleTickerP
           new Center(
             child: new Text(
                 (widget._nums[widget._i].piada != null)? '${widget._nums[widget._i].piada.toString()}': "",
-              style: new TextStyle(fontSize: _spinAnimation.value * 25)
+              style: new TextStyle(fontSize: _spinAnimation.value * 25),
+              textAlign: TextAlign.center,
             ),
           ),
           new Padding(
@@ -69,7 +70,8 @@ class NumberSortingPageState extends State<NumberSortingPage> with SingleTickerP
           new Center(
             child: new Text(
                 (widget._nums[widget._i].descricao != null)? '"${widget._nums[widget._i].descricao.toString()}"': "",
-                style: new TextStyle(fontSize: _spinAnimation.value * 15)
+                style: new TextStyle(fontSize: _spinAnimation.value * 15),
+              textAlign: TextAlign.center,
             ),
           )
         ],
@@ -88,7 +90,7 @@ class NumberSortingPageState extends State<NumberSortingPage> with SingleTickerP
             }),
             backgroundColor: Colors.amberAccent,
             tooltip: 'Próximo número',
-            child: Icon(Icons.navigate_next),
+            child: Icon(Icons.fast_forward),
           )
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
