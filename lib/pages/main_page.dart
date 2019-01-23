@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:numberpicker/numberpicker.dart';
-import '../util/piadas_fetcher.dart';
+import '../dao/numbers_dao.dart';
 
 class MainPage extends StatefulWidget{
   MainPage({Key key}) : super(key: key);
@@ -96,7 +96,7 @@ class MainPageState extends State<MainPage>{
   }
 
   void test(){
-    new PiadasFetcher().readData.then((palo) => print(palo));
+    new NumbersDAO(22).numbers;
   }
 
 }
