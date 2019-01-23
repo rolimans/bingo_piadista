@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:numberpicker/numberpicker.dart';
+import '../util/piadas_fetcher.dart';
 
 class MainPage extends StatefulWidget{
   MainPage({Key key}) : super(key: key);
@@ -16,7 +17,7 @@ class MainPageState extends State<MainPage>{
     return new Material(
       color: Colors.indigoAccent,
       child: new InkWell(
-        onTap: () => print("Cliquei"),
+        onTap: test,
         child: new Column(
           children: <Widget>[
             new Expanded(
@@ -92,6 +93,10 @@ class MainPageState extends State<MainPage>{
         setState(() => _n = value);
       }
     });
+  }
+
+  void test(){
+    new PiadasFetcher().readData.then((palo) => print(palo));
   }
 
 }
