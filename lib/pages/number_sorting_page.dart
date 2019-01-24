@@ -6,6 +6,7 @@ import '../model/number.dart';
 class NumberSortingPage extends StatefulWidget{
   int _i = 0;
   int _len;
+  String _old_n = "";
 
   List<Number> _nums;
 
@@ -35,6 +36,27 @@ class NumberSortingPageState extends State<NumberSortingPage> with SingleTickerP
 
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: new Drawer(
+        child: Column(
+          children: <Widget>[
+            new Padding(
+              padding: EdgeInsets.symmetric(vertical:40.0, horizontal: 10),
+              child: new Text(
+                  "Números já sorteados:",
+                style: new TextStyle(fontSize: 25),
+              ),
+            ),
+            new Expanded(
+                child: new Padding(padding: EdgeInsets.symmetric(horizontal: 15), child:
+                new Text(
+                "${widget._old_n}| ${widget._nums[widget._i].number} ",
+                textAlign: TextAlign.center,
+                )
+                  ,)
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text("Bingo Piadista"),
         backgroundColor: Colors.teal,
@@ -83,6 +105,7 @@ class NumberSortingPageState extends State<NumberSortingPage> with SingleTickerP
                 if(widget._i == widget._len-1){
                   _endGame();
                 } else {
+                  widget._old_n += "| ${widget._nums[widget._i].number} ";
                   widget._i++;
                   _spinAnimationController.reset();
                   _spinAnimationController.forward();
