@@ -75,3 +75,4 @@ build/
 android/key.properties
 signing/*
 app-release.apk
+play_store_files/*
